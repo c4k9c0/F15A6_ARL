@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="18D8CE21-2A82-C66A-DDDC-8F87AA2C75EC" name="F15A6_Task">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:46:07 UTC</createdTime>
+<generatorID>7553AB86-4FE4-1931-E06A-172B2FC6A61F</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="task_id" id="8969180E-75C3-7714-F3EB-1D03E6650118">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:46:07 UTC</createdTime>
+<generatorID>F902B95D-1042-21E7-FA03-906E8D6D0447</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="effective_date" id="4B980C67-DBD7-8239-D68A-818BF25F55C7">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:46:07 UTC</createdTime>
+<generatorID>7FCD21C2-2DCC-DA0D-A37A-2D55AA6B6352</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="task_abbreviation" id="65F879A2-1D08-C9A0-5A62-E1080FA8EA8F">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:46:07 UTC</createdTime>
+<generatorID>BE32B3A0-147C-378A-A55F-815989C107F7</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="task_description" id="4B0C6974-AE4B-ECD8-2395-A860333575EA">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:46:07 UTC</createdTime>
+<generatorID>9111AF83-DCE7-D07E-905D-DD5B45FAC22F</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15A6_RFE_RFE_id" id="0504AA78-0B71-2D4D-AAA5-1BBA69969835">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:46:07 UTC</createdTime>
+<generatorID>4ED69A49-13BD-D62F-51EC-ABFCAA0ABE87</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5939C723-4710-DCC8-F856-4C0F4D251B06" referredColumn="2EA0E42E-B990-5653-AE88-058C85DB31E0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="200ADA2C-47F0-53B6-3538-5CDE7678394D" name="F15A6_Task_PK">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:46:07 UTC</createdTime>
+<generatorID>DD3FA731-2887-B77B-DE6F-F12FE3D40E34</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8969180E-75C3-7714-F3EB-1D03E6650118"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4108AD54-52C8-3CCC-2522-68CFEB5F81A6" name="F15A6_Task_F15A6_RFE_FK">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:46:08 UTC</createdTime>
+<generatorID>2C97B5DD-DA34-3DEE-B0A7-3BE98EB69A48</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0504AA78-0B71-2D4D-AAA5-1BBA69969835"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

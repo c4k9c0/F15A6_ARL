@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C6483158-9E1B-03A9-0027-5BFCA80D23AB" name="F15A6_RTC">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 01:56:10 UTC</createdTime>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<engineerTo>
+<item key="DD6DA868-2B93-40D0-E591-1A165BDEECD2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="code_id" id="00CC1ABE-8C65-3E22-A7DB-F88A341419AA">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:07:46 UTC</createdTime>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<engineerTo>
+<item key="DD6DA868-2B93-40D0-E591-1A165BDEECD2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="role_type" id="5A4086B4-5CC9-8BED-49F0-704D63DB1BDF">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:08:00 UTC</createdTime>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<engineerTo>
+<item key="DD6DA868-2B93-40D0-E591-1A165BDEECD2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="96D973D5-58B7-924D-7188-424E774DF71B">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:08:20 UTC</createdTime>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<engineerTo>
+<item key="DD6DA868-2B93-40D0-E591-1A165BDEECD2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RFE_id" id="DFF04195-ACBC-E7FB-9612-BC8E92F16348">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:34:49 UTC</createdTime>
+<generatorID>611A3DF8-9690-1C11-06C3-E439F4212D6E</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<engineerTo>
+<item key="DD6DA868-2B93-40D0-E591-1A165BDEECD2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B301A49C-98CC-89C2-7C73-AAA40CAF8861</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="82B53462-09E6-F052-4C24-D48778A40DC5">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:34:58 UTC</createdTime>
+<generatorID>695ED650-25D9-4056-EEBB-1C1F319419C1</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<engineerTo>
+<item key="DD6DA868-2B93-40D0-E591-1A165BDEECD2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>EC1DCBA0-7701-098A-982B-6CF14077C574</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7A87AE9C-2B62-C515-7812-C73DA8CA6900" name="F15A6_Role_Type_Code PK">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-06 02:07:57 UTC</createdTime>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DD6DA868-2B93-40D0-E591-1A165BDEECD2" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>00CC1ABE-8C65-3E22-A7DB-F88A341419AA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

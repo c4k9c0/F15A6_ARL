@@ -1,0 +1,14 @@
+1. Is RFE_Status_Codes needed? Doesn't Status cover it?
+2. Is RFE_Role_Type_Codes needed? Does it have to do with data protection?
+3. Why in the spec is Status looking up to RFE?
+4. What fields do you want to capture for Lab and Project?
+5. What should the types be for employee_email, emloyee_office, employee_phone?
+6. You have a lot of unique identifiers, those are going to be incremented by 1 each time. Is this
+   okay or do you want to be able to set these values? ie: employee_id and status_id.
+7. What do you think of the Associate junction table?
+8. F15_A6_Associate or F15_A6_Employee, one of them is too long.
+9. F15_A6_Contact or F15_A6_Employee, one of them is too long.
+10. F15_A6_Status_History or F15_A6_Employee, one of them is too long.
+11. F15_A6_Status_History or F15_A6_RFE, one of them is too long.
+12. F15_A6_Status_History or F15_A6_Status, one of them is too long.
+13. How to prevent foreign keys from getting changed in the relational model?

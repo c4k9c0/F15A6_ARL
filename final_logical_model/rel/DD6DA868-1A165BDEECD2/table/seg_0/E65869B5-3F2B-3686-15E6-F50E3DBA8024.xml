@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E65869B5-3F2B-3686-15E6-F50E3DBA8024" name="F15A6_Task_Jun">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-20 19:02:17 UTC</createdTime>
+<generatorID>813D47C2-B865-4100-55AD-6396BE595A5A</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="junction_id" id="E34FC7C4-FCD8-BB01-C276-AEC1CD2DEDE8">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-20 19:02:17 UTC</createdTime>
+<generatorID>D63EB954-25CE-3D8A-2792-5A0A7DE2E3D9</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F15A6_Task_task_id" id="E767B18C-D8AD-3966-404E-5A218346D5F7">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-20 19:02:17 UTC</createdTime>
+<generatorID>DCE14136-0993-73A3-1FC1-03F32FCC95E3</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="491C0E4F-FD99-32B9-4D54-F63BE36E0592" referredColumn="8969180E-75C3-7714-F3EB-1D03E6650118"/>
+</associations>
+</Column>
+<Column name="F15A6_RFE_RFE_id" id="269EFEE8-FD18-2FFF-97C5-B11C95CFD99B">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-20 19:02:17 UTC</createdTime>
+<generatorID>17593E96-7351-617F-E444-393897D199D4</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C9800F2A-39B4-95A9-507B-2E3400C34373" referredColumn="2EA0E42E-B990-5653-AE88-058C85DB31E0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="81DEDD53-95D4-D887-1164-5478EDE5F19B" name="F15A6_Task_Jun_PK">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-20 19:02:17 UTC</createdTime>
+<generatorID>AF2E37AF-BFCB-4497-3EBB-6E10A07670B2</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E34FC7C4-FCD8-BB01-C276-AEC1CD2DEDE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BCCFB29-3E74-A0A6-841E-FF971F864899" name="F15A6_Task_Jun_F15A6_RFE_FK">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-20 19:02:18 UTC</createdTime>
+<generatorID>E5444233-9E63-9953-8EE5-00BB7DC7E040</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="269EFEE8-FD18-2FFF-97C5-B11C95CFD99B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9B24D8B-A200-1BEF-B581-A2F9DDE975C5" name="F15A6_Task_Jun_F15A6_Task_FK">
+<createdBy>Charlie</createdBy>
+<createdTime>2015-11-20 19:02:18 UTC</createdTime>
+<generatorID>142443B0-DB62-E1B3-55CE-BBF2BBD49E51</generatorID>
+<ownerDesignName>final_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E767B18C-D8AD-3966-404E-5A218346D5F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
